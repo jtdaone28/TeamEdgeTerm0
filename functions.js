@@ -16,23 +16,43 @@ const READLINE = require("readline-sync");
   Challenge 1: Let's try to write some basic functions.
 -------------------------------------------- */
 
- console.log("------------------- Challenge 1 -------------------")
+console.log("------------------- Challenge 1 -------------------")
 
 // **** Challenge 1: Problem 1 ****
 // Write a function called printMessage() that prints any message you want.
-
+function printMessage() {
+	console.log("Welcome to soooouuullll plane! we fly, we party, we land!");
+}
 
 // **** Challenge 1: Problem 2 ****
 // Write a function called printFiveMessages() that calls printMessage() five times.
+function printFiveMessage() {
+	printMessage()
+	printMessage()
+	printMessage()
+	printMessage()
+	printMessage()
 
-
+} 5
+printFiveMessage()                    
 // **** Challenge 1: Problem 3 ****
 // Write a function called getUserInput() that asks the user if they'd like to print your message
 // once or five times. Then call one of the two functions above based on what the user decides.
+let userinput = READLINE.question("how many times would u like to print the message? betweem 1 or 5 times?");
+
+if (userinput == 1) {
+	printMessage()
+} else if (userinput == 5) {
+	printFiveMessage
+}
 
 
 // **** Challenge 1: Problem 4 ****
 // Write a function called printGreeting() that prints a greeting message to the user.
+let(userinput) = printGreeting() {
+	console.log("Wusspoppin yo!!")
+
+}
 
 
 // **** Challenge 1: Problem 5 ****
@@ -52,7 +72,7 @@ Challenge 2: Functions are also able to take input and return output.
 
 -------------------------------------------- */
 
- console.log("------------------- Challenge 2 -------------------")
+console.log("------------------- Challenge 2 -------------------")
 
 /* **** Challenge 2: Problem 1 ****
 
@@ -74,7 +94,7 @@ However, if the two values are the same, the funciton will return double their s
 
 // Make sure to test your code! Write a few function calls to make sure your code works!
 
-/* -------------------------------------------- 
+/* --------------------------------------------
 
 **** Challenge 2: Problem 2 ****
 
@@ -94,7 +114,7 @@ Write a function called makes10 that takes two numbers, a and b, and returns tru
 
 // Make sure to test your code! Write a few function calls to make sure your code works!
 
-/* -------------------------------------------- 
+/* --------------------------------------------
 
 **** Challenge 2: Problem 3 ****
 
@@ -120,19 +140,19 @@ it should be "10:00" and weekends it should be "off".
 
 // Make sure to test your code! Write a few function calls to make sure your code works!
 
-/* -------------------------------------------- 
+/* --------------------------------------------
 
 **** Challenge 2: Problem 4 ****
 
 Write a function that will tell if you if you received a speeding ticket.
-You are driving a little too fast, and a police officer stops you. 
+You are driving a little too fast, and a police officer stops you.
 
-To compute the result, encoded as a number value: 
+To compute the result, encoded as a number value:
 	0=no ticket
 	1=small ticket
 	2=big ticket
-If speed is 60 or less, the result is 0. 
-If speed is between 61and 80 inclusive, the result is 1. 
+If speed is 60 or less, the result is 0.
+If speed is between 61and 80 inclusive, the result is 1.
 If speed is 81 or more, the result is 2.
 
 -------------------------------------------- */

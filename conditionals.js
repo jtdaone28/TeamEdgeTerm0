@@ -15,6 +15,12 @@ console.log("------------------- Challenge 1 -------------------")
 /* Can you drive?
     Prompt the user to enter their age.
     Write conditional statements that print out whether you can drive in your city. */
+var age = READLINE.question("How old are u?") 
+    if (age >=16) {
+    console.log("you can drive da whip!!");
+}else {
+    console.log("you trippin big fella you gonna get somebody hurt!!!")
+}
 
 
 
@@ -35,7 +41,10 @@ console.log("------------------- Challenge 2 -------------------")
 /* Who placed first?
     Write conditional statements that checks which is the highest and prints the highest score. 
     Hint: Create three variables and assign them random scores. */
-
+var score1 = 23
+var score2 = 15
+var score3 = 18 
+if (score1)
 
 
 

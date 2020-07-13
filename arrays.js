@@ -10,7 +10,7 @@
 
    Remember! Test often and use the debugging tips you learned in the last lab!
     
-  -------------------------------------------- */
+  -------------------------------- ------------ */
 
  console.log(`
   _______                             ______ __           __ __                                
@@ -35,22 +35,23 @@ console.log("names: " + names)
 // **** Challenge 1 : Part 1 **** 
 // Given an array named food, fill the array with 5 strings.
 
-let food = []
+let food = ["chicken nuggets","french fries","cheeseburgers","sweet tea","soda"]
 console.log("food: " + food)  
 
 
 // **** Challenge 1 : Part 2 **** 
 // Declare an array named numbers with 5 numbers.
 
-
+let numbers = [0,1,2,3,4]
 console.log("numbers: " + numbers)   
-
 
 // **** Challenge 1 : Part 3 **** 
 // Declare and log two more arrays with anything you want. 
 
+let videoGames =["bo1","bo2","bo3","mw2","mw3"]
+console.log("games: " + games)
 
-
+let scores = [0,1,2,3,4]
 
 
 /* -------------------------------------------- 
@@ -65,7 +66,7 @@ console.log("The first name is " + names[0]);
 
 // **** Challenge 2 : Part 1 **** 
 // Log the name of the person from your food array you spoke to last.
-
+console.log("The last person i spoke to was" + names[2])
 
 
 

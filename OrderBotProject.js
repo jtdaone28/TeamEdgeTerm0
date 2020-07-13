@@ -11,7 +11,7 @@
 
 					Let's try it!
 
-  -------------------------------------------- 
+  ----------------------------------r---------- 
 
 Scenario Parameters: 
 
@@ -42,6 +42,54 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 
 
+let userName = READLINE.question("hey kid. whats your name?");
+let userOrder = READLINE.question("what would u want me to grab?-chips,soda,candy you know i cant let yall get stuff yall selves people be steallin.");
+let Count = READLINE.question(`How many You Want?`);
+
+let person1PriceOfSnack;
+
+let person1PriceOfDrink;
+
+let person1PriceOfTip;
+
+var person1 = (`what would u like me to grab?`)
+
+function whatYouFinnaOrder(Name, order, Count) {
+	let cost;
+	if (order == `chips`) {
+		cost = 1.99
+
+	} else if (order == `soda`) {
+		cost = 2.29
+
+	} else if (order == `candy`) {
+		cost = .99
+	} else {
+		console.log("Scram kid we dont got what ya lookin for!")
+		return 0
+	}
+	cost = (cost * Count)
+	console.log(`hey ${Name} you have yo ${order} now gimme what ya owe me and scadaddle!! ${cost}`)
+	return cost
+
+}
+
+let cost = whatYouFinnaOrder(userName, userOrder, Count)
+
+let tax = 1.1
+cost = cost * tax
+let tip = READLINE.question(`What ya finna gimmne for a tip?-0%,10%,30%?`)
+
+if (tip == "0%")
+
+	console.log("aww what the heck?") 
+ else if (tip == "10%")
+
+	console.log("thank you kid") 
+ else if (tip == "30%") {
+
+	console.log("Your much appreciated")
+}
 
 
 
@@ -51,7 +99,8 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 
 
-/* -------------------------------------------- 
+
+/* --------------------------------------------
 
 Part 2:
 Now that you have the costs of everything ordered, let's calculate the cost of each person's order(including tip and tax).
@@ -76,7 +125,7 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 
 
-/* -------------------------------------------- 
+/* --------------------------------------------
 
 Part 3:
 Let's print out a receipt for each person.
@@ -100,13 +149,14 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 
 
-/* -------------------------------------------- 
+
+/* --------------------------------------------
 
 Part 4: Upchallenges!
 
 How many of these upchallenges can you implement?
 
-- Make sure the user is only entering numbers. If they enter an invalid value, prompt them to re-enter. 
+- Make sure the user is only entering numbers. If they enter an invalid value, prompt them to re-enter.
 - The displayed prices should only have two decimal places.
 - Can you adjust your program to account for any shared items ordered for the group?
 - Display the tax and tip values
